@@ -1,0 +1,194 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 212
+  ClientWidth = 287
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 287.000000000000000000
+    Size.Height = 190.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = Bottom
+    Sizes = (
+      287s
+      164s
+      287s
+      164s
+      287s
+      164s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 102.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Printer Settings'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object cbPrinterList: TComboBox
+        Position.X = 16.000000000000000000
+        Position.Y = 94.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object Label1: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Select Printer'
+        TabOrder = 2
+      end
+      object Button1: TButton
+        Position.X = 16.000000000000000000
+        Position.Y = 44.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Find Connected BT Devices'
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Position.X = 16.000000000000000000
+        Position.Y = 126.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Save Device Selection'
+        OnClick = Button2Click
+      end
+      object Label2: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 16.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'Printer Test Application'
+        TabOrder = 4
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 69.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Print Test'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Button3: TButton
+        Position.X = 24.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Initialize Printer'
+        OnClick = Button3Click
+      end
+      object GroupBox1: TGroupBox
+        Position.X = 24.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Characters Per Inch (Cpi)'
+        TabOrder = 3
+        object rbCpi12: TRadioButton
+          Position.X = 16.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 57.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = '12'
+        end
+        object rbCpi15: TRadioButton
+          IsChecked = True
+          Position.X = 96.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 57.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = '15'
+        end
+        object rbCpi17: TRadioButton
+          Position.X = 184.000000000000000000
+          Position.Y = 17.000000000000000000
+          Size.Width = 57.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = '17'
+        end
+      end
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 26.000000000000000000
+        Position.Y = 79.000000000000000000
+        Size.Width = 253.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Viewport.Width = 249.000000000000000000
+        Viewport.Height = 46.000000000000000000
+      end
+      object Button4: TButton
+        Position.X = 22.000000000000000000
+        Position.Y = 135.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Print'
+        OnClick = Button4Click
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 53.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'About'
+    end
+  end
+  object StatusBar1: TStatusBar
+    Position.Y = 190.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 287.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+end

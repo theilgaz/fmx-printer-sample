@@ -181,6 +181,8 @@ object Form1: TForm1
       StyleLookup = ''
       TabOrder = 0
       Text = 'About'
+      ExplicitSize.cx = 53.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
     end
   end
   object StatusBar1: TStatusBar
